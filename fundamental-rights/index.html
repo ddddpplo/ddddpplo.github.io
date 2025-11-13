@@ -1,6 +1,59 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Fundamental Rights of American Democracy</title>
+    <link rel="stylesheet" href="style.css">  
+    <script>
+      function toggleInfoBox(num) {
+        infoBox = document.getElementById("info-box" + num);
+        if (infoBox.classList.contains("hidden")) {
+          infoBox.classList.remove("hidden");
+        } else {
+          infoBox.classList.add("hidden");
+        }
+      }
+    </script>
+  </head>
   <body>
-    <h1>Fundamental Rights of American Democracy</h1>
+    <div id="alignment">
+      <h1><u>Fundamental Rights of American Democracy</u></h1>
+      <div id="rights-container">
+        <div class="right-box" onclick="toggleInfoBox(1);">
+          <h2>Dignity of the Individual</h2>
+          <div class="info-box hidden" id="info-box1">
+            <h3>What does it mean?</h3>
+            <p>Dignity of the Individual means that everyone has inherent and inalienable value.
+            </p>
+            <h3>Where does it come from?</h3>
+            <p>It comes from the philosophical, humanistic, or religious belief that everyone has
+              equal value regardless of social status.
+            </p>
+            <h3>What does it look like?</h3>
+            <p>something</p>
+          </div>
+        </div>
+        <div class="right-box" onclick="toggleInfoBox(2)">
+          <h2>Equality</h2>
+        </div>
+        <div class="right-box" onclick="toggleInfoBox(3)">
+          <h2>Citizenship</h2>
+        </div>
+        <div class="right-box" onclick="toggleInfoBox(4)">
+          <h2>Pathways to Citizenship for Noncitizens</h2>
+        </div>
+        <div class="right-box" onclick="toggleInfoBox(5)">
+          <h2>Majority Rule</h2>
+        </div>
+        <div class="right-box" onclick="toggleInfoBox(6)">
+          <h2>Minority Rights</h2>
+        </div>
+        <div class="right-box" onclick="toggleInfoBox(7)">
+          <h2>Compromise</h2>
+        </div>
+        <div class="right-box" onclick="toggleInfoBox(8)">
+          <h2>Individual Freedom</h2>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
