@@ -8,8 +8,10 @@
         infoBox = document.getElementById("info-box" + num);
         if (infoBox.classList.contains("hidden")) {
           infoBox.classList.remove("hidden");
+          infoBox.classList.add("shown");
         } else {
           infoBox.classList.add("hidden");
+          infoBox.classList.remove("shown");
         }
       }
     </script>
@@ -29,29 +31,114 @@
               equal value regardless of social status.
             </p>
             <h3>What does it look like?</h3>
-            <p>something</p>
+            <p>It looks like equal treatment under the law and equal access to resources that allow
+              for a decent life.
+            </p>
           </div>
         </div>
         <div class="right-box" onclick="toggleInfoBox(2)">
           <h2>Equality</h2>
+          <div class="info-box hidden" id="info-box2">
+            <h3>What does it mean?</h3>
+            <p>Equality is the concept that all individuals have the same rights and should
+              therefore be treated equally.
+            </p>
+            <h3>Where does it come from?</h3>
+            <p>
+              It comes from the Declaration of Independence and the belief 
+              that all people share the same natural rights.
+            </p>
+            <h3>What does it look like?</h3>
+            <p>
+              It looks like equal protection under the law and fair access to opportunities 
+              without discrimination.
+            </p>
+          </div>
         </div>
         <div class="right-box" onclick="toggleInfoBox(3)">
           <h2>Citizenship</h2>
+          <div class="info-box hidden" id="info-box3">
+            <h3>What does it mean?</h3>
+            <p>
+              Citizenship means being a legal member of a nation with specific rights, responsibilities, 
+              and participation in civic life.
+            </p>
+            <h3>Where does it come from?</h3>
+            <p>
+              It comes from constitutional law, national identity, and the social contract 
+              between people and government.
+            </p>
+            <h3>What does it look like?</h3>
+            <p>It involves voting, obeying laws, serving on juries, and contributing to the community.</p>
+          </div>
         </div>
         <div class="right-box" onclick="toggleInfoBox(4)">
           <h2>Pathways to Citizenship for Noncitizens</h2>
+          <div class="info-box hidden" id="info-box4">
+            <h3>What does it mean?</h3>
+            <p>
+              This is the legal processes that allows immigrants and noncitizens to legally become 
+              full members of our country.
+            </p>
+            <h3>Where does it come from?</h3>
+            <p>It comes from immigration laws, constitutional principles, and national policies defining 
+              who can join the country.</p>
+            <h3>What does it look like?</h3>
+            <p>It looks like naturalization, green card programs, asylum and refugee processes, 
+              and other legal immigration pathways.</p>
+          </div>
         </div>
         <div class="right-box" onclick="toggleInfoBox(5)">
           <h2>Majority Rule</h2>
+          <div class="info-box hidden" id="info-box5">
+            <h3>What does it mean?</h3>
+            <p>Majority rule means that decisions are made based on what most people or 
+              representatives choose.</p>
+            <h3>Where does it come from?</h3>
+            <p>It comes from the democratic principle that power comes from the will of the people.</p>
+            <h3>What does it look like?</h3>
+            <p>It looks like elections where the highest number of votes win and policies that 
+              follow the preferences of the majority of citizens.</p>
+          </div>
         </div>
         <div class="right-box" onclick="toggleInfoBox(6)">
           <h2>Minority Rights</h2>
+          <div class="info-box hidden" id="info-box6">
+            <h3>What does it mean?</h3>
+            <p>Minority rights mean that people who are not in the majority are still protected 
+              and cannot have their rights taken away.</p>
+            <h3>Where does it come from?</h3>
+            <p>It comes from constitutional protections, especially the Bill of Rights, 
+              which ensure that basic rights cannot be overridden by the majority.</p>
+            <h3>What does it look like?</h3>
+            <p>It looks like protections against discrimination for unpopular opinions, 
+              minority groups, and other individuals.</p>
+          </div>
         </div>
         <div class="right-box" onclick="toggleInfoBox(7)">
           <h2>Compromise</h2>
+          <div class="info-box hidden" id="info-box7">
+            <h3>What does it mean?</h3>
+            <p>Compromise means finding a middle ground so that different groups can agree on a solution.</p>
+            <h3>Where does it come from?</h3>
+            <p>It comes from the practical need for cooperation in a democracy 
+              where people hold different views.</p>
+            <h3>What does it look like?</h3>
+            <p>It looks like laws created through negotiation and policies that blend 
+              competing interests together.</p>
+          </div>
         </div>
         <div class="right-box" onclick="toggleInfoBox(8)">
           <h2>Individual Freedom</h2>
+          <div class="info-box hidden" id="info-box8">
+            <h3>What does it mean?</h3>
+            <p>Individual freedom means that people can make their own choices as long as they 
+              do not harm others.</p>
+            <h3>Where does it come from?</h3>
+            <p>Individual freedoms come mainly from the constitution, such as the first amendment.</p>
+            <h3>What does it look like?</h3>
+            <p>It looks like freedom of speech, religion, and other personal decision-making.</p>
+          </div>
         </div>
       </div>
     </div>

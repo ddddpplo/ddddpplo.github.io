@@ -20,11 +20,11 @@ h1 {
 .right-box {
     user-select:none;
     cursor:pointer;
-    background-color:#f6f6f6;
+    background-color:#f2f2f2;
     padding:5px 22px;
     border-radius:30px;
     margin:10px;
-    filter:drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.4));
+    filter:drop-shadow(1px 1px 7px rgba(0, 0, 0, 0.4));
     transition:filter 0.3s, background-color 0.3s;
     > h2 {
         font-family:Helvetica, sans-serif;
@@ -38,12 +38,16 @@ h1 {
 }
 
 .hidden {
-    height:0px;
-    overflow:hidden;
+    max-height:0px;
+}
+
+.shown {
+    max-height:350px;
 }
 
 .info-box {
-    transition:height 0.5s;
+    overflow:hidden;
+    transition:max-height 0.4s ease-in-out;
     > h3 {
         font-family:Helvetica, sans-serif;
         font-weight:bold;
